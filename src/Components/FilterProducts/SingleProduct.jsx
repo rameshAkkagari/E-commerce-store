@@ -20,6 +20,8 @@ function SingleProduct() {
         id:item.id,
         price:item.price,
         size:size,
+        img:item.img,
+        text:item.text,
         amount:1,
         totalPrice:item.price,
         name:item.name,
