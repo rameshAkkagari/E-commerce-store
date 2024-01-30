@@ -18,12 +18,18 @@ function Slider() {
     const prev =()=>{
         dispatch(SliderAction.prevSlide(slideIndex -1))
     }
-
-    // useEffect(()=>{
-    //     setTimeout(()=>{
-    //         dispatch(SliderAction.nextSlide(slideIndex + 1))
-    //     },4000)
-    // },[slideIndex])
+    // useEffect(() => {
+    //     // Set a timeout and store the timeout ID
+    //     const timeoutId = setTimeout(() => {
+    //       dispatch(SliderAction.nextSlide(slideIndex + 1));
+    //     }, 5000);
+      
+    //     // Cleanup function to clear the timeout if the component unmounts or slideIndex changes
+    //     return () => {
+    //       clearTimeout(timeoutId);
+    //     };
+    //   }, [dispatch, slideIndex]);
+      
   return (
     <div className='relative pb-2'>
         <div>
