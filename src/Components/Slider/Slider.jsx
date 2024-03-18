@@ -14,7 +14,7 @@ function Slider() {
     const next =()=>{
         dispatch(SliderAction.nextSlide(slideIndex + 1))
     }
-
+    
     const prev =()=>{
         dispatch(SliderAction.prevSlide(slideIndex -1))
     }
